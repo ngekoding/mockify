@@ -189,7 +189,6 @@ import {
   IconACenter,
   IconATop,
   IconReset,
-  IconTexture,
 } from "../Icons.js";
 
 export default {
@@ -202,7 +201,6 @@ export default {
     IconACenter,
     IconATop,
     IconReset,
-    IconTexture,
   },
   data() {
     return {
