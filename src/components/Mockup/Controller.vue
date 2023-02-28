@@ -84,9 +84,15 @@
       </div>
       <div class="controller-form--field">
       <div
+        class="gradient-color--item has-gradient--none has-gradient--transparent"
+        :style="{ backgroundColor: 'white' }"
+        @click="useGradient(false), options.backgroundTransparent = true"
+      >
+    </div>
+      <div
         class="gradient-color--item has-gradient--none"
         :style="{ backgroundColor: options.backgroundColor }"
-        @click="useGradient(false)"
+        @click="useGradient(false), options.backgroundTransparent = false"
       ></div>
       <div
         class="gradient-color--item has-gradient"
@@ -183,6 +189,7 @@ import {
   IconACenter,
   IconATop,
   IconReset,
+  IconTexture,
 } from "../Icons.js";
 
 export default {
@@ -195,6 +202,7 @@ export default {
     IconACenter,
     IconATop,
     IconReset,
+    IconTexture,
   },
   data() {
     return {

@@ -86,6 +86,10 @@ section#content {
     &--none {
       background-color: #FDFDFD;
     }
+    &--transparent {
+      background: url('@src/assets/transparent.jpeg') no-repeat;
+      background-size: cover;
+    }
   }
 }
 

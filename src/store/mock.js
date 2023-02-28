@@ -17,6 +17,7 @@ export const useMock = defineStore({
         useGradientColor: false,
         position: "center",
         backgroundColor: "#D1D1D1",
+        backgroundTransparent: false,
         gradientColor: {},
         headerType: "window",
         shadowType: "s-1",

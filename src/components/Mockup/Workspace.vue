@@ -64,7 +64,9 @@ export default {
     ...mapWritableState(useMock, [ "hasImage" ]),
     canvasStyle () {
       let background = {
-        backgroundColor: this.options.backgroundColor
+        backgroundColor: this.options.backgroundTransparent
+          ? 'rgba(0,0,0,0)'
+          : this.options.backgroundColor
       }
 
       if (this.options.useGradientColor && "--gradient-from" in this.options.gradientColor) {
